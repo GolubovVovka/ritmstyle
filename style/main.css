@@ -84,7 +84,7 @@ nav a {
 
 .banner h2::after {
     content: url(../style/img/decore-white.svg);
-    transform: scale(1; -1);
+    transform: scale(1, -1);
 }
 
 .title {
@@ -93,6 +93,17 @@ nav a {
     color: white;
     font-size: 42px;
     font-weight: 700;
+    display: flex;
+    gap: 66px;
+}
+
+.title::before {
+    content: url(../style/img/decore-white.svg);
+}
+
+.title::after {
+    content: url(../style/img/decore-white.svg);
+    transform: scale(1, -1);
 }
 
 .seance {
@@ -111,15 +122,30 @@ nav a {
     background-repeat: no-repeat;
     background-blend-mode: color;
     background-color: #018ABE80;
+    color: white;
+
+}
+
+.seance-item:hover {
+    filter: brightness(1.2)drop-shadow(0 0 0.75rem #018abe);
+    border: solid 2px #018ABE;
+    transition: all .1s linear;
+
+}
+
+.seance-item:active {
+    filter: brightness(1);
 }
 
 .seance-item:nth-child(1) {
     grid-area: 1 / 1 / 3 / 2;
     height: 540px;
+
 }
 
 .seance-item:nth-child(2) {
     grid-area: 1 / 2 / 2 / 3;
+
 }
 
 .seance-item:nth-child(3) {
@@ -132,4 +158,102 @@ nav a {
 
 .seance-item:nth-child(5) {
     grid-area: 2 / 3 / 3 / 4;
+}
+
+.knopka {
+    color: white;
+    text-decoration: none;
+}
+
+#feetback{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 100px; 
+}
+
+.feetback {
+    display: flex;
+    gap: 50px;
+    align-items: center;
+
+}
+
+.feetback-item {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: #018ABE;
+    border-radius: 10px;
+    padding: 50px 60px;
+    font-size: 14px;
+    width: 33%;
+}
+
+.feetback-item:first-child,
+.feetback-item:last-child {
+    opacity: 40%;
+    font-size: 10px;
+    padding: 40px 45px;
+}
+
+#about {
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+
+}
+.about-title {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 30px;
+
+}
+.about-item {
+    display: flex;
+    align-items: center;
+    gap: 84px;
+    color: white;
+
+}
+.about-item img {
+    border-radius: 10px;
+    filter: brightness(.3);
+    width: 526px;
+    height: 365px;
+    object-fit: cover;
+}
+.price {
+display: flex;
+align-items: center;
+gap: 134px;
+
+
+}
+
+.price ul {
+    font-size: 18px;
+    font-weight: 400;
+    color: white;
+    width: 416px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+
+
+
+
+
+}
+.price li {
+position: relative;
+display: flex;
+justify-content: space-between;
+
+
+}
+.price li::before{
+    position: absolute;
+    left: -38px;
 }
