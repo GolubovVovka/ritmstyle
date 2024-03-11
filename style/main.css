@@ -165,11 +165,11 @@ nav a {
     text-decoration: none;
 }
 
-#feetback{
+#feetback {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 100px; 
+    gap: 100px;
 }
 
 .feetback {
@@ -204,12 +204,14 @@ nav a {
     gap: 100px;
 
 }
+
 .about-title {
     font-size: 24px;
     font-weight: 700;
     margin-bottom: 30px;
 
 }
+
 .about-item {
     display: flex;
     align-items: center;
@@ -217,6 +219,7 @@ nav a {
     color: white;
 
 }
+
 .about-item img {
     border-radius: 10px;
     filter: brightness(.3);
@@ -224,12 +227,21 @@ nav a {
     height: 365px;
     object-fit: cover;
 }
+
 .price {
-display: flex;
-align-items: center;
-gap: 134px;
+    display: flex;
+    align-items: center;
+    gap: 134px;
 
 
+}
+
+.price img {
+
+    width: 526px;
+    height: 396px;
+    object-fit: cover;
+    border-radius: 10px;
 }
 
 .price ul {
@@ -246,14 +258,43 @@ gap: 134px;
 
 
 }
+
 .price li {
-position: relative;
-display: flex;
-justify-content: space-between;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
 
 
 }
-.price li::before{
+
+.price li::before {
     position: absolute;
+    content: url(../style/img/Rectangle\ 27@2x.svg);
     left: -38px;
+}
+
+.price-span {
+    font-weight: 700;
+}
+.price h3 {
+    color: white;
+}
+.price span::after {
+    content: &#8381;
+}
+.price picture {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    font-size: 21px;
+    font-weight: 700;
+    color: white;
+}
+.map {
+    background: url(../style/img/MAP.svg);
+    grid-area: 1 / 1 / 3 / 3;
+    border-radius: 10px;
+    width: 856px;
+    height: 604px;
 }
